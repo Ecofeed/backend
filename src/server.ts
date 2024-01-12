@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
+import router from './router/router';
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cookieParser());
+app.use(router);
 app.listen(PORT, () => {
   console.log(`App listen on port ${PORT}`);
 });

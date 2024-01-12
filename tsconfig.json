@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "NodeNext",
+    "lib": ["es6", "DOM"],
+    "allowJs": true,
+    "outDir": "build",
+    "baseUrl": "src",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "NodeNext"
+  },
+  "exclude": ["prettier.config.js"]
+}
